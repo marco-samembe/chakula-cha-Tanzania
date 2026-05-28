@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Regions of Tanzania</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="regions.html">Regions</a>
+    <a href="tribes.html">Tribes</a>
+    <a href="foods.html">Foods</a>
+  </nav>
+</header>
+
+<div class="container">
+<div class="grid" id="regionsContainer"></div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+function openRegion(region){
+  window.location.href="tribes.html?region="+encodeURIComponent(region);
+}
+</script>
+
+</body>
+</html>
