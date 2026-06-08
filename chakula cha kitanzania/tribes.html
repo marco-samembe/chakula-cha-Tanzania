@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>🇹🇿 Tanzania Culture Explorer</h1>
+        <div class="container header-container">
+            <div class="logo"><h1><i class="fas fa-utensils"></i> Food Tribe <span>Tanzania</span></h1></div>
+            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+            <div class="mobile-menu" onclick="toggleMenu()">
+             ☰
+            </div>
+            <div class="overlay" onclick="closeMenu()"></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="tribes.html">All Tribes</a></li>
+                <li><a href="foods.html">Food & Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="   ">Live Chat</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<div class="container">
+
+<input type="text" id="searchInput" placeholder="Search tribe or region...">
+
+<div class="grid" id="tribesContainer"></div>
+
+</div>
+
+
+ <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>Food Tribe Tanzania</h3><p>The complete database of Tanzanian tribal foods - preserving heritage for future generations.</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="regions.html">All Regions</a></li><li><a href="tribes.html">All tribes</a></li><li><a href="foods.html">food & Recipes</a></li><li><a href="">Live Chat</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Food Tribe Tanzania - Celebrating 120+ Tribal Culinary Traditions<br>By Marco, Jackline, Maurus</p></div>
+        </div>
+    </footer>
+
+
+    <script>
+function toggleMenu(){
+    document.querySelector(".nav-menu").classList.toggle("active");
+    document.querySelector(".overlay").classList.toggle("active");
+}
+
+function closeMenu(){
+    document.querySelector(".nav-menu").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+</script>
+<script src="Region data.js"></script>
+<script src="function.js"></script>
+</body>
+</html>
